@@ -1,0 +1,42 @@
+/* Container für das Layout */
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Textblock Styling */
+  .text-block {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  /* Bildblock Styling */
+  .image-block img {
+    width: 300px;
+    height: auto;
+  }
+  
+  /* Media Query für kleinere Bildschirme (Tablets, Handys) */
+  @media (max-width: 768px) {
+    .home-container {
+      flex-direction: column; /* Text und Bild untereinander anordnen */
+      text-align: center; /* Text zentrieren */
+    }
+  
+    .text-block {
+      padding-right: 0; /* Entferne den Abstand zwischen Text und Bild */
+      margin-bottom: 20px; /* Abstand zwischen Text und Bild auf kleinen Bildschirmen */
+    }
+  
+    .image-block img {
+      width: 100%; /* Bild passt sich der Breite des Containers an */
+      max-width: 300px; /* Maximalbreite für das Bild */
+    }
+  }
+  
