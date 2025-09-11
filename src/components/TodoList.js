@@ -57,7 +57,7 @@ const TodoList = () => {
   };
   return (
     <div className="todo-container" data-test="todo-container">
-      <h2>Todo List</h2>
+      <h2 data-test="todo-title">Todo List</h2>
       <input
         type="text"
         value={newTask}

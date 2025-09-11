@@ -22,11 +22,18 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "plugin:cypress/recommended"
+  ],
+  "plugins": [
+    "cypress"
+  ],
+  "env": {
+    "cypress/globals": true
+  }
+},
   "browserslist": {
     "production": [
       ">0.2%",
@@ -40,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-plugin-cypress": "^5.1.1",
     "gh-pages": "^6.1.1"
   }
 }
