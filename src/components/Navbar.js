@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css'; // Importiere das Styling
+import './Navbar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,14 +10,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
-      <h1 className="logo">My Liste</h1>
-      <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/todos">Todo List</Link></li>
+    <nav className="navbar" data-test="navbar">
+      <h1 className="logo" data-test="logo">My Liste</h1>
+      
+      <ul className={`nav-links ${isOpen ? 'open' : ''}`} data-test="nav-links">
+        <li><Link to="/" data-test="link-home">Home</Link></li>
+        <li><Link to="/about" data-test="link-about">About</Link></li>
+        <li><Link to="/todos" data-test="link-todos">Todo List</Link></li>
       </ul>
-      <div className="hamburger" onClick={toggleMenu}>
+
+      <div className="hamburger" onClick={toggleMenu} data-test="hamburger-menu">
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>

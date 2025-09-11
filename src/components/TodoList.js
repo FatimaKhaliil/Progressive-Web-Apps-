@@ -55,9 +55,8 @@ const TodoList = () => {
       console.error('Error deleting task: ', error);
     }
   };
-
   return (
-    <div className="todo-container">
+    <div className="todo-container" data-test="todo-container">
       <h2>Todo List</h2>
       <input
         type="text"
@@ -65,22 +64,41 @@ const TodoList = () => {
         onChange={(e) => setNewTask(e.target.value)}
         placeholder="New task"
         className="input-field"
+        data-test="new-task-input"
       />
-      <button className="button button1" onClick={addTask}>
+      <button
+        className="button button1"
+        onClick={addTask}
+        data-test="add-task-button"
+      >
         Add Task
       </button>
 
       <ul>
         {tasks.map((task) => (
-          <li key={task.id} className="task-item">
-            <span className="task-text" style={{ textDecoration: task.done ? 'line-through' : 'none' }}>
+          <li key={task.id} className="task-item" data-test="task-item">
+            <span
+              className="task-text"
+              style={{ textDecoration: task.done ? 'line-through' : 'none' }}
+              data-test="task-text"
+            >
               {task.text}
             </span>
             <div className="task-buttons">
-              <button className="button button2" onClick={() => toggleTask(task.id, task.done)}>
+              <button
+                className="button button2"
+                onClick={() => toggleTask(task.id, task.done)}
+                data-test="toggle-task-button"
+              >
                 {task.done ? 'Undo' : 'Done'}
               </button>
-              <button className="button button3" onClick={() => deleteTask(task.id)}>Delete</button>
+              <button
+                className="button button3"
+                onClick={() => deleteTask(task.id)}
+                data-test="delete-task-button"
+              >
+                Delete
+              </button>
             </div>
           </li>
         ))}
