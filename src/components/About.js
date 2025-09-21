@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div data-test="about-container">
       <img 
-        src="iu-liste.jpg"
+        src="about.PNG"
         alt="Bildbeschreibung hier" 
         style={imageStyle} 
         data-test="about-image"
