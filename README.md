@@ -47,6 +47,9 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 ### `npx cypress open`
 Opens the Cypress Test Runner.  
 You can select and run End-to-End tests for your application in an interactive UI.
+### `npm run start:cypress`
+Starts the React app and the Cypress Test Runner simultaneously in two parallel terminals.
+
 
 ## Learn More
 
@@ -156,3 +159,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 >>>>>>> 2997861 (clone-first commit)
 
 >>>>>>> ae10986876ac3457ef88aa7673ef5f3b17bad7a2
+
