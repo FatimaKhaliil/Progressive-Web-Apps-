@@ -1,8 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 # pwa-offline-project
-Untersuchung von Progressive Web Apps (PWA) mit React und Firebase: Offline-Fähigkeiten
-=======
+End-to-End-Tests zur Überprüfung der Funktionalität aller Benutzeraktionen auf einer Website=======
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -159,4 +158,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 >>>>>>> 2997861 (clone-first commit)
 
 >>>>>>> ae10986876ac3457ef88aa7673ef5f3b17bad7a2
+
 
